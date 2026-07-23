@@ -15,11 +15,31 @@
     content="Results-driven Data professional building scalable pipelines and turning complex data into decisions." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ngarg2k2.github.io/" />
+  <meta property="og:image" content="https://ngarg2k2.github.io/assets/img/profile.png" />
+  <meta property="og:image:alt" content="Nipun Garg — Data Engineer & Data Analyst" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nipun Garg | Data Engineer & Data Analyst" />
+  <meta name="twitter:description" content="Results-driven Data professional building scalable pipelines and turning complex data into decisions." />
+  <meta name="twitter:image" content="https://ngarg2k2.github.io/assets/img/profile.png" />
 
   <title>Nipun Garg | Data Engineer &amp; Data Analyst</title>
 
-  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
   <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Analytics: uncomment and replace G-XXXXXXXXXX with your GA4 Measurement ID to enable -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,6 +56,9 @@
 </head>
 
 <body>
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <!-- ===== Navbar ===== -->
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
@@ -54,9 +77,14 @@
           target="_blank" rel="noopener">Resume</a>
       </nav>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars"></i>
-      </button>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light or dark theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -90,7 +118,6 @@
               class="fa-brands fa-linkedin-in"></i></a>
           <a href="https://github.com/ngarg2k2" target="_blank" rel="noopener" aria-label="GitHub"><i
               class="fa-brands fa-github"></i></a>
-          <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=garg2002nipun@gmail.com" target="_blank" rel="noopener" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
       <div class="hero-photo">
@@ -302,32 +329,60 @@
       <h2 class="section-title">Certifications</h2>
 
       <div class="cert-grid">
-        <a class="cert-card" href="https://achieve.snowflake.com/6b6e46b6-5687-440d-834e-d21407dd7df1" target="_blank" rel="noopener">
+        <a class="cert-card" href="https://achieve.snowflake.com/a9e2a571-d95d-4296-bb18-2211abcd5dce" target="_blank" rel="noopener">
           <i class="fa-solid fa-snowflake"></i>
           <div>
-            <h3>Snowflake Certified</h3>
-            <p>SnowPro Core (COF-C02) &amp; SnowPro Advanced – Data Analyst</p>
+            <h3>SnowPro Core</h3>
+            <p>Snowflake Certified · COF-C02</p>
+          </div>
+        </a>
+        <a class="cert-card" href="https://achieve.snowflake.com/6b6e46b6-5687-440d-834e-d21407dd7df1#acc.ycmxa4Ke" target="_blank" rel="noopener">
+          <i class="fa-solid fa-snowflake"></i>
+          <div>
+            <h3>SnowPro Advanced – Data Analyst</h3>
+            <p>Snowflake Certified</p>
           </div>
         </a>
         <a class="cert-card" href="https://learn.microsoft.com/en-us/users/nipungargmaqsoftware-4757/credentials/c15ee4a7476c2bf9" target="_blank" rel="noopener">
-          <i class="fa-solid fa-cloud"></i>
+          <i class="fa-solid fa-chart-line"></i>
           <div>
-            <h3>Microsoft Certified</h3>
-            <p>Fabric Analytics Engineer (DP-600) &amp; Fabric Data Engineer (DP-700)</p>
+            <h3>Fabric Analytics Engineer</h3>
+            <p>Microsoft Certified · DP-600</p>
+          </div>
+        </a>
+        <a class="cert-card" href="https://learn.microsoft.com/en-us/users/ngarg2k2/credentials/c2a8db53914711e8" target="_blank" rel="noopener">
+          <i class="fa-solid fa-database"></i>
+          <div>
+            <h3>Fabric Data Engineer</h3>
+            <p>Microsoft Certified · DP-700</p>
+          </div>
+        </a>
+        <a class="cert-card" href="https://learn.microsoft.com/api/credentials/share/en-us/NipunGargMAQSoftware-4757/5CAF80A8405F2A17?sharingId=8E65E8AD4F92A9F9" target="_blank" rel="noopener">
+          <i class="fa-solid fa-brain"></i>
+          <div>
+            <h3>Developing AI-Enabled Database Solutions</h3>
+            <p>Microsoft Certified</p>
           </div>
         </a>
         <a class="cert-card" href="https://learn.microsoft.com/en-us/users/nipungargmaqsoftware-4757/credentials/fad36cecd745e939" target="_blank" rel="noopener">
           <i class="fa-solid fa-robot"></i>
           <div>
-            <h3>Microsoft Certified</h3>
-            <p>Azure AI Apps &amp; Agents Developer + Agentic AI Business Solutions Architect</p>
+            <h3>Azure AI Apps &amp; Agents Developer</h3>
+            <p>Microsoft Certified</p>
+          </div>
+        </a>
+        <a class="cert-card" href="https://learn.microsoft.com/api/credentials/share/en-us/NipunGargMAQSoftware-4757/7F5F65E9C86A9DC?sharingId=8E65E8AD4F92A9F9" target="_blank" rel="noopener">
+          <i class="fa-solid fa-sitemap"></i>
+          <div>
+            <h3>Agentic AI Business Solutions Architect</h3>
+            <p>Microsoft Certified</p>
           </div>
         </a>
         <a class="cert-card" href="https://learn.microsoft.com/api/credentials/share/en-us/NipunGargMAQSoftware-4757/1F935D89C30C0172?sharingId=8E65E8AD4F92A9F9" target="_blank" rel="noopener">
           <i class="fa-brands fa-github"></i>
           <div>
-            <h3>Microsoft Certified</h3>
-            <p>GitHub Copilot (GH-300)</p>
+            <h3>GitHub Copilot</h3>
+            <p>Microsoft Certified · GH-300</p>
           </div>
         </a>
       </div>
@@ -361,12 +416,28 @@
       </p>
       <div class="contact-actions">
         <a class="btn btn-primary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=garg2002nipun@gmail.com" target="_blank" rel="noopener"><i class="fa-solid fa-envelope"></i> garg2002nipun@gmail.com</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/919988485145?text=Hi%20Nipun%2C%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect%20regarding%20a%20Data%20Engineer%20%2F%20Data%20Analyst%20opportunity." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
         <a class="btn btn-ghost" href="tel:+919988485145"><i class="fa-solid fa-phone"></i> +91 99884-85145</a>
       </div>
+
+      <form class="contact-form" id="contactForm">
+        <input type="hidden" name="access_key" value="ffa51a30-f73a-4e09-941d-1a32f28999f0" />
+        <input type="hidden" name="subject" value="New message from portfolio" />
+        <input type="hidden" name="from_name" value="Portfolio Contact" />
+        <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" />
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+        </div>
+        <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+        <button type="submit" class="btn btn-primary form-submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
       <div class="contact-social">
         <a href="https://linkedin.com/in/ngarg2k2" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
         <a href="https://github.com/ngarg2k2" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=garg2002nipun@gmail.com" target="_blank" rel="noopener" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/919988485145" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
     </div>
   </section>
@@ -415,6 +486,67 @@
     document.querySelectorAll('.section, .tl-item, .project-card, .skill-card, .cert-card').forEach(el => {
       el.classList.add('reveal'); io.observe(el);
     });
+
+    // Scroll progress bar
+    const progress = document.getElementById('scrollProgress');
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const scrolled = h.scrollTop / (h.scrollHeight - h.clientHeight) * 100;
+      progress.style.width = scrolled + '%';
+    });
+
+    // Active nav link highlighting
+    const navMap = {};
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach(a => navMap[a.getAttribute('href').slice(1)] = a);
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+          const link = navMap[e.target.id];
+          if (link) link.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('section[id]').forEach(s => navObserver.observe(s));
+
+    // Theme toggle (persisted)
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('i');
+    const applyTheme = (t) => {
+      document.documentElement.setAttribute('data-theme', t);
+      themeIcon.className = t === 'light' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+    };
+    applyTheme(localStorage.getItem('theme') || 'dark');
+    themeToggle.addEventListener('click', () => {
+      const next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      localStorage.setItem('theme', next); applyTheme(next);
+    });
+
+    // Contact form (Web3Forms)
+    const form = document.getElementById('contactForm');
+    const statusEl = document.getElementById('formStatus');
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        statusEl.textContent = 'Sending…'; statusEl.className = 'form-status sending';
+        try {
+          const res = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(Object.fromEntries(new FormData(form)))
+          });
+          const data = await res.json();
+          if (data.success) {
+            statusEl.textContent = 'Thanks! Your message has been sent.'; statusEl.className = 'form-status ok';
+            form.reset();
+          } else {
+            statusEl.textContent = data.message || 'Something went wrong. Please email me directly.'; statusEl.className = 'form-status err';
+          }
+        } catch {
+          statusEl.textContent = 'Network error. Please email me directly.'; statusEl.className = 'form-status err';
+        }
+      });
+    }
   </script>
 </body>
 
