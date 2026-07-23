@@ -1,890 +1,420 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="manifest" href="./assets/img/favicon/manifest.json" />
-  <!-- ios support -->
-  <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
-  <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
-  <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
-  <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
-  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
-  <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
-  <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
-  <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
-  <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
-  <meta name="theme-color" content="#db4938" />
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
+  <meta name="description"
+    content="Nipun Garg — Data Engineer & Data Analyst with 2.5+ years building scalable ETL/ELT pipelines and BI solutions on Azure, Databricks, Snowflake, Microsoft Fabric and Power BI." />
+  <meta name="author" content="Nipun Garg" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nipun Garg | Data Engineer & Data Analyst" />
+  <meta property="og:description"
+    content="Results-driven Data professional building scalable pipelines and turning complex data into decisions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ngarg2k2.github.io/" />
+
+  <title>Nipun Garg | Data Engineer &amp; Data Analyst</title>
+
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
   <link rel="stylesheet" href="/assets/css/style.css" />
-  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
-  <title>Nipun Garg | Software Developer</title>
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe>
-  </noscript>
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand">Nipun<span>.</span></a>
 
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-resume"
+          href="https://drive.google.com/file/d/1_c-86ILN0X7FpqjE_BizXWyWkjUYGaSD/view?usp=sharing"
+          target="_blank" rel="noopener">Resume</a>
+      </nav>
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/passport-new.png" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Open Nipun's resume in a new tab"
-          href="https://drive.google.com/file/d/1_c-86ILN0X7FpqjE_BizXWyWkjUYGaSD/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Nipun Garg</a><span
-        class="black-text">Software Developer</span>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
-  </nav>
+  </header>
 
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Nipun's Resume in a new tab"
-          href="https://drive.google.com/file/d/1_c-86ILN0X7FpqjE_BizXWyWkjUYGaSD/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Nipun Garg</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and
-                challenging real-world problems.</h5>
-            </div>
-            <div class="social">
-              <a href="http://linkedin.com/in/ngarg2k2" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/ngarg2k2/" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
-          </div>
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-hi">Hi, I'm</p>
+        <h1 class="hero-name">Nipun Garg</h1>
+        <h2 class="hero-role">
+          <span class="typed" id="typed"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          Results-driven <strong>Data professional</strong> with <strong>2.5+ years</strong> designing
+          scalable <strong>ETL/ELT pipelines</strong> and delivering <strong>actionable insights</strong>
+          on Azure, Databricks, Snowflake, Microsoft Fabric &amp; Power BI.
+        </p>
+        <div class="hero-meta">
+          <span><i class="fa-solid fa-location-dot"></i> Noida / NCR, India</span>
+          <span><i class="fa-solid fa-briefcase"></i> Open to DE / DA roles</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost"
+            href="https://drive.google.com/file/d/1_c-86ILN0X7FpqjE_BizXWyWkjUYGaSD/view?usp=sharing"
+            target="_blank" rel="noopener"><i class="fa-solid fa-download"></i> Resume</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://linkedin.com/in/ngarg2k2" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/ngarg2k2" target="_blank" rel="noopener" aria-label="GitHub"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=garg2002nipun@gmail.com" target="_blank" rel="noopener" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
-    </section>
-
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <p>
-          I am a Computer Science Student at Thapar Institute of Engineering and Technology. I enjoy problem-solving and
-          coding. Always strive to bring 100% to the work I do.
-
-          I have worked on technologies like Python, Flask, MySQL, MongoDB, HTML5, CSS, C++. I have made many projects
-          in these domains.
-
-          I am passionate about developing complex applications that solve real-world problems impacting millions of
-          users.
-        </p>
-        <p>
-        <ul>
-          <li><b>Programming:</b> C/C++ | Python | R | SQL | C#/.Net </li>
-          <li><b>Databases:</b> MySQL | MongoDB</li>
-          <li><b>Web Skills:</b> HTML | CSS | JS | Flask | NodeJs</li>
-          <li><b>Core Subjects:</b> OOPS | DBMS | OS | DSA | DAA</li>
-          <li><b>Tools & Technologies:</b> Git | GCP | Heroku | PowerBI</li>
-        </ul>
-
-        </p>
-
-        <p>
-          Looking for an opportunity to work in a challenging position combining my skills in Software Engineering,
-          which provides professional development, interesting experiences and personal growth.
-        </p>
+      <div class="hero-photo">
+        <div class="photo-ring">
+          <img src="/assets/img/profile.png" alt="Nipun Garg" />
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-eyebrow">01 — Introduction</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a <strong>Data Engineer</strong> at <strong>MAQ Software</strong> with <strong>2.5+ years</strong>
+            of experience spanning data engineering, analytics and business analysis. I design and optimize
+            end-to-end data pipelines and turn large, messy datasets into reliable, decision-ready insights.
+          </p>
+          <p>
+            My work covers scalable ETL/ELT on <strong>Azure Data Factory</strong>, <strong>Databricks</strong>,
+            <strong>Snowflake</strong> and <strong>Microsoft Fabric</strong>, alongside analytics and reporting
+            with <strong>Power BI</strong> and <strong>DAX</strong>. I'm <strong>Microsoft</strong> and
+            <strong>Snowflake certified</strong>, and I care about clean architecture, performance tuning and
+            data quality.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-num">2.5+</span><span class="stat-label">Years Experience</span></div>
+          <div class="stat"><span class="stat-num">7+</span><span class="stat-label">Certifications</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
-      <div class="container">
+  <!-- ===== Experience ===== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <p class="section-eyebrow">02 — Where I've worked</p>
+      <h2 class="section-title">Experience</h2>
 
-        <!-- Latest Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://maqsoftware.com/" target="_blank"><img alt="MAQ logo"
-                    src="/assets/img/maq_photo.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://maqsoftware.com/" target="_blank"
-                      class="teal-text hoverline">MAQ Software</a></span>
-                </p>
-              </div>
+      <div class="timeline">
+        <!-- MAQ SE2 -->
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <h3>Software Engineer 2 <span class="tl-company">· MAQ Software</span></h3>
+              <span class="tl-date">Mar 2026 – Present · Noida/NCR</span>
             </div>
-            <div class="role brown-text text-darken-2">Software Engineer</div>
             <ul>
-              <li>
-                Actively involved in a live project for a client, focusing on a baking system, where the core technologies employed include C#/.NET for backend development, Sql Server for database management, and XAML for creating a user-friendly interface.
-              </li>
-              <li>
-                Aiming to deliver an efficient and intuitive solution for the client's baking system with a focus on backend development and user interface design.
-              </li>
-              <li>
-                <b>Tools:</b> C#/.NET, SQL, PowerBI
-              </li>
+              <li>Led the design of end-to-end data solutions and shaped key architecture decisions across pipelines and reporting.</li>
+              <li>Owned data governance and quality via cross-source validation, automated data quality checks and reconciliation.</li>
+              <li>Drove stakeholder discussions and translated business needs into scalable solutions with 5+ cross-functional teams.</li>
             </ul>
           </div>
-          <div class="card-action">
-            <span>Jan 2024 - Present</span>
-          </div>
         </div>
 
-        <!-- samsung -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.samsungprism.com/" target="_blank"><img alt="Samsungprism logo"
-                    src="/assets/img/samsungprism.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.samsungprism.com/" target="_blank"
-                      class="teal-text hoverline">Samsung Prism</a></span>
-                </p>
-              </div>
+        <!-- MAQ SE1 -->
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <h3>Software Engineer 1 <span class="tl-company">· MAQ Software</span></h3>
+              <span class="tl-date">Jul 2024 – Mar 2026 · Noida/NCR</span>
             </div>
-            <div class="role brown-text text-darken-2">Research Intern</div>
             <ul>
-              <li>
-                Development and implementation of a state-of-the-art Named Entity Recognition (NER) project.
-              </li>
-              <li>
-                Conducted extensive data preprocessing, feature engineering, and annotation tasks to improve the
-                performance of the NER models.
-              </li>
-              <li>
-                <b>Tools:</b> Python, Machine Learning, NLP
-              </li>
+              <li>Engineered high-volume data pipelines using Azure Data Factory, Databricks and Snowflake.</li>
+              <li>Optimized data models in Microsoft Fabric &amp; Databricks (30% faster) and streamlined CI/CD with Azure DevOps (50% faster deployments).</li>
+              <li>Built interactive Power BI dashboards and DAX semantic models, accelerating reporting by 40%.</li>
+              <li>Conducted ad-hoc SQL &amp; DAX analysis to surface KPIs, trends and anomalies for timely decisions.</li>
             </ul>
           </div>
-          <div class="card-action">
-            <span>Oct 2022 - Mar 2023</span>
-          </div>
         </div>
 
-
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.tutedude.com/" target="_blank"><img alt="Tutedude logo"
-                    src="/assets/img/tutedude.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.tutedude.com/" target="_blank"
-                      class="teal-text hoverline">Tutedude</a></span>
-                </p>
-              </div>
+        <!-- MAQ ASE -->
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <h3>Associate Software Engineer <span class="tl-company">· MAQ Software</span></h3>
+              <span class="tl-date">Jan 2024 – Jul 2024 · Noida/NCR</span>
             </div>
-            <div class="role brown-text text-darken-2">Marketing Intern</div>
             <ul>
-              <li>
-                Responsible for Mass Media Marketing Strategy and Execution including Social Media, PR Management as
-                well
-                as Event Planning.
-              </li>
-              <li>
-                <b>Tools:</b> Marketing, Analytics
-              </li>
+              <li>Developed efficient ETL/ELT workflows using PySpark, SQL and Airflow, cutting execution time by 25%.</li>
+              <li>Automated Build Verification Tests (BVT) with PySpark, enforcing a 5% variance threshold to detect upstream anomalies.</li>
             </ul>
           </div>
-          <div class="card-action">
-            <span>Dec 2020 - Jan 2021</span>
-          </div>
         </div>
 
-
-      </div>
-    </section>
-
-    <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row">
-
-
-          <!-- WALKING THE WALK -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/gait.png" style="height: 100%; width: 100%"
-                  class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">WALKING THE WALK<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  The project aims to develop a gait recognition system that can accurately identify individuals based
-                  on gait patterns.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title brown-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-
-                  <h1 style="display: flex; justify-content: center;">
-                    On Going
-                  </h1>
-                </ul>
-              </div>
+        <!-- Samsung -->
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <h3>Research Analyst <span class="tl-company">· Samsung PRISM</span></h3>
+              <span class="tl-date">Oct 2022 – Mar 2023 · Remote</span>
             </div>
+            <ul>
+              <li>Fine-tuned a pre-trained BERT model (Hugging Face Transformers) for NER, improving entity extraction accuracy by 35%.</li>
+              <li>Performed data preprocessing, annotation validation, tokenization and dataset preparation.</li>
+              <li>Evaluated models on Precision, Recall and F1-score with hyperparameter tuning.</li>
+            </ul>
           </div>
-
-
-
-          <!--Yojana Anek Sthaan Ek-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="/assets/img/yase.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Yojana Anek Sthaan Ek<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A place where you can find all the schemes and finding the best and most suitable scheme.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> HTML, CSS, Bootstrap, NODE, MONGODB, EXPRESS</li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://yase.onrender.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/ngarg2k2/Hackodisha"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Olympics Analysis -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="/assets/img/oa.png" style="height: 100%; width: 100%"
-                  class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Olympics Analysis<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  This application provides you with the ability to explore and analyze data related to the Olympic
-                  Games.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Python, Machine Learning, Streamlit</li>
-
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://olympic-analysis-web-app.streamlit.app/"
-                    target="_blank" data-position="top" data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/ngarg2k2/olympic-analysis-web-app" target="_blank" data-position="top"
-                    data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-   <!-- IPL-Statistics-Dashboard -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="/assets/img/dashboard.png" style="height: 100%; width: 100%"
-                  class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">IPL-Statistics-Dashboard<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  The IPL-Statistics-Dashboard is a data visualization project created in Tableau that focuses on presenting comprehensive statistics and insights from the Indian Premier League (IPL) cricket tournament. 
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> R, Tableau</li>
-
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://public.tableau.com/app/profile/nipun.garg7271/viz/IPL-Statistics-Dashboard/Dashboard1?publish=yes"
-                    target="_blank" data-position="top" data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/ngarg2k2/IPL-Statistics-Dashboard" target="_blank" data-position="top"
-                    data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Expense Tracker -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="/assets/img/expense.png" style="height: 100%; width: 100%"
-                  class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Expense Tracker<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  It simplifies financial management by effortlessly tracking your expenses, promoting better budget control.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> HTML, CSS,  JS</li>
-
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://ngarg2k2.github.io/ExpenseTrackerApp/"
-                    target="_blank" data-position="top" data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/ngarg2k2/ExpenseTrackerApp" target="_blank" data-position="top"
-                    data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- IntelliMed -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="/assets/img/IntelliMed.png" style="height: 100%; width: 100%"
-                  class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">IntelliMed<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  IntelliMed: Where intelligence meets healthcare
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Python, Machine Learning, Bootstrap</li>
-
-
-                </ul>
-                <div class="card-action">
-                  <!-- <a aria-label="Visit Blog website" href="https://olympic-analysis-web-app.streamlit.app/"
-                    target="_blank" data-position="top" data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a> -->
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/ngarg2k2/IntelliMed" target="_blank" data-position="top"
-                    data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Mashup -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/mash.png" style="height: 100%; width: 100%"
-                  class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Mashup<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A place where you can find songs of your favourite singer,get them mashed and mailed on your email id.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Python, Streamlit</li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://ngarg2k2-mashup-main.streamlit.app/" target="_blank"
-                    data-position="top" data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/ngarg2k2/mashup/"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Simon Game -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/simon.png" style="height: 100%; width: 100%"
-                  class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Simon Game<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Simon game is a memory-testing game where players repeat and sequence colored lights.
-                  <!-- and sounds, offering a fun and challenging experience for all ages. -->
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title brown-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> HTML, CSS, JavaScript</li>
-                </ul>
-                <!-- TODO: UPLOAD THIS PROJECT ON GITHUB -->
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://ngarg2k2.github.io/simonGame/" target="_blank"
-                    data-position="top" data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/ngarg2k2/simonGame/"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <!-- Coming Soon-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/comingSoon.jpg" style="height: 100%; width: 100%"
-                  class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline"
-                  style="display: block; text-align: center;">Coming Soon<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- ************* -->
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Fifth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
-      <div class="container">
-        <!-- Languages and Databases -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Languages and Databases</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/html5-300x300.jpg" class="responsive-img" />HTML5
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/css3-300x300.jpg" class="responsive-img" />CSS3
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
-              </div>
-            </div>
+  <!-- ===== Skills ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-eyebrow">03 — What I work with</p>
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3><i class="fa-solid fa-code"></i> Languages &amp; Databases</h3>
+          <div class="chips">
+            <span>Python</span><span>SQL</span><span>T-SQL</span><span>PySpark</span><span>Spark SQL</span>
+            <span>Scala</span><span>MDX</span><span>DAX</span>
           </div>
         </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Libraries</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/numpy-logo-1-500x500.jpg" class="responsive-img" />NumPy
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/pandas-logo-2-500x500.jpg" class="responsive-img" />Pandas
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/opencv-logo-1-500x500.jpg" class="responsive-img" />OpenCV
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/sk-learn-logo-1-500x500.jpg" class="responsive-img" />scikit-learn
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/matplotlib-logo-1-500x500.jpg" class="responsive-img" />matplotlib
-              </div>
-            </div>
+        <div class="skill-card">
+          <h3><i class="fa-solid fa-layer-group"></i> Tools &amp; Platforms</h3>
+          <div class="chips">
+            <span>Azure Data Factory</span><span>Databricks</span><span>Snowflake</span><span>Microsoft Fabric</span>
+            <span>Azure Synapse</span><span>Airflow</span><span>Power BI</span><span>Power Query</span>
+            <span>Azure DevOps</span><span>Git</span><span>Excel</span>
           </div>
         </div>
-
-        <!-- Frameworks -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Frameworks</h4>
-            <div class="row text-center">
-              <!-- <div class="col s4 m2">
-                <img alt="" src="/assets/img/django-logo.webp" class="responsive-img" />Django
-              </div> -->
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/flask-logo.png" class="responsive-img" />Flask
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/bootstrap.png" class="responsive-img" />Bootstrap
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/keras-logo.png" class="responsive-img" />Keras
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tensorflow-logo-1.png" class="responsive-img" />TensorFlow
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/pytorch-logo.png" class="responsive-img" />PyTorch
-              </div>
-            </div>
+        <div class="skill-card">
+          <h3><i class="fa-solid fa-diagram-project"></i> Concepts &amp; Methodologies</h3>
+          <div class="chips">
+            <span>ETL/ELT</span><span>Data Warehousing</span><span>Data Lakehouse</span><span>Delta Lake</span>
+            <span>Star-Schema Modeling</span><span>Data Pipelines</span><span>Data Visualization</span>
+            <span>KPI &amp; Reporting</span><span>Data Quality</span><span>Requirement Gathering</span>
+            <span>Stakeholder Management</span><span>Agile/Scrum</span>
           </div>
-        </div>
-
-        <!-- Other -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Other</h4>
-            <div class="row text-center">
-
-
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/git.png" class="responsive-img" />Git
-              </div>
-              <!-- <div class="col s4 m2">
-                <img alt="" src="/assets/img/aws.png" class="responsive-img" />AWS
-              </div> -->
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/heroku.png" class="responsive-img" />Heroku
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://thapar.edu/" target="_blank"
-                      class="teal-text hoverline">Thapar Institute of Engineering and Technology</a></span>
-                </p>
-                <p class="brown-text">Patiala, India</p>
-                <p>
-                  <b>Degree: </b>Bachelor of Engineering in Computer Engineering
-                  <br>
-                  <b>CPI: </b>8.50/10.0
-                </p>
-
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Database Management Systems</li>
-                    <li>Operating Systems</li>
-                    <li>Machine Learning</li>
-                    <!-- <li>Computer Vision</li> -->
-                  </ul>
-                  </p>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://davabh.org/" target="_blank"
-                      class="teal-text hoverline">L.R.S Dayanand Anglo-Vedic Sr Sec Model School</a></span>
-                </p>
-                <p class="brown-text">Abohar, Punjab</p>
-                <br>
-                <p>
-                  <b>Degree: </b>Senior Secondary Examination CBSE 
-                  <br>
-                  <b>Percentage: </b>91.4%
-                </p>
-                <br>
-                <p>
-                  <b>Degree: </b>Higher Secondary Examination CBSE 
-                  <br>
-                  <b>Percentage: </b>92.6%
-                </p>
-
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Science (Non-Medical)</li>
-                  </ul>
-                  </p>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container">
-        <p>
-          <a aria-label="Call Nipun" data-position="top" data-tooltip="Call Nipun"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-              aria-label="Call Nipun">+91 99884-85145</a></a>
-        </p>
-        <p>
-          <a aria-label="Email Nipun" href="mailto:garg2002nipun@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Email Nipun" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Nipun" href="mailto:garg2002nipun@gmail.com"
-              class="hoverline">garg2002nipun@gmail.com</a></a>
-        </p>
-        <p>
-          <a aria-label="Email Nipun" href="mailto:ngarg4_be20@thapar.edu" target="_blank" data-position="top"
-            data-tooltip="Email Nipun" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Nipun" href="mailto:ngarg4_be20@thapar.edu"
-              class="hoverline">ngarg4_be20@thapar.edu</a></a>
-        </p>
-        <p>
-          <a aria-label="View Nipun on GitHub" href="http://github.com/ngarg2k2" target="_blank" data-position="top"
-            data-tooltip="View Nipun on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Nipun on Github" href="http://github.com/ngarg2k2" class="hoverline"
-              target="_blank">github.com/ngarg2k2</a></a>
-        </p>
-        <p>
-          <a aria-label="View Nipun on LinkedIn" href="http://linkedin.com/in/ngarg2k2" target="_blank"
-            data-position="top" data-tooltip="View Nipun on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Nipun on LinkedIn" href="http://linkedin.com/in/ngarg2k2"
-              class="hoverline" target="_blank">linkedin.com/in/ngarg2k2</a></a>
-        </p>
+  <!-- ===== Projects ===== -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <p class="section-eyebrow">04 — Things I've built</p>
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-img"><img src="/assets/img/IntelliMed.png" alt="IntelliMed" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>IntelliMed</h3>
+            <p>AI-driven symptom analysis engine delivering disease prediction with 87% accuracy, plus LSTM-based inventory forecasting.</p>
+            <div class="tags"><span>Python</span><span>Machine Learning</span><span>LSTM</span></div>
+            <div class="project-links">
+              <a href="https://github.com/ngarg2k2/IntelliMed" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img"><img src="/assets/img/gait.png" alt="Walking the Walk" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>Walking the Walk</h3>
+            <p>Gait-based biometric system using computer vision and deep learning for contactless, real-time identity verification.</p>
+            <div class="tags"><span>Computer Vision</span><span>Deep Learning</span><span>Python</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img"><img src="/assets/img/oa.png" alt="Olympics Analysis" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>Olympics Analysis</h3>
+            <p>Interactive web app to explore and analyze Olympic Games data with rich visualizations.</p>
+            <div class="tags"><span>Python</span><span>Streamlit</span><span>Analytics</span></div>
+            <div class="project-links">
+              <a href="https://olympic-analysis-web-app.streamlit.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              <a href="https://github.com/ngarg2k2/olympic-analysis-web-app" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img"><img src="/assets/img/dashboard.png" alt="IPL Statistics Dashboard" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>IPL Statistics Dashboard</h3>
+            <p>Data-visualization dashboard presenting comprehensive IPL cricket statistics and insights.</p>
+            <div class="tags"><span>Tableau</span><span>R</span><span>Data Viz</span></div>
+            <div class="project-links">
+              <a href="https://public.tableau.com/app/profile/nipun.garg7271/viz/IPL-Statistics-Dashboard/Dashboard1" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              <a href="https://github.com/ngarg2k2/IPL-Statistics-Dashboard" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing', {
-      strings: ["Developer", "Fast Learner", "ML Enthusiast"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
+  <!-- ===== Certifications ===== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <p class="section-eyebrow">05 — Verified skills</p>
+      <h2 class="section-title">Certifications</h2>
 
+      <div class="cert-grid">
+        <a class="cert-card" href="https://achieve.snowflake.com/6b6e46b6-5687-440d-834e-d21407dd7df1" target="_blank" rel="noopener">
+          <i class="fa-solid fa-snowflake"></i>
+          <div>
+            <h3>Snowflake Certified</h3>
+            <p>SnowPro Core (COF-C02) &amp; SnowPro Advanced – Data Analyst</p>
+          </div>
+        </a>
+        <a class="cert-card" href="https://learn.microsoft.com/en-us/users/nipungargmaqsoftware-4757/credentials/c15ee4a7476c2bf9" target="_blank" rel="noopener">
+          <i class="fa-solid fa-cloud"></i>
+          <div>
+            <h3>Microsoft Certified</h3>
+            <p>Fabric Analytics Engineer (DP-600) &amp; Fabric Data Engineer (DP-700)</p>
+          </div>
+        </a>
+        <a class="cert-card" href="https://learn.microsoft.com/en-us/users/nipungargmaqsoftware-4757/credentials/fad36cecd745e939" target="_blank" rel="noopener">
+          <i class="fa-solid fa-robot"></i>
+          <div>
+            <h3>Microsoft Certified</h3>
+            <p>Azure AI Apps &amp; Agents Developer + Agentic AI Business Solutions Architect</p>
+          </div>
+        </a>
+        <a class="cert-card" href="https://learn.microsoft.com/api/credentials/share/en-us/NipunGargMAQSoftware-4757/1F935D89C30C0172?sharingId=8E65E8AD4F92A9F9" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+          <div>
+            <h3>Microsoft Certified</h3>
+            <p>GitHub Copilot (GH-300)</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- ===== Education ===== -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <p class="section-eyebrow">06 — Academic background</p>
+      <h2 class="section-title">Education</h2>
 
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div>
+          <h3>Thapar Institute of Engineering and Technology</h3>
+          <p class="edu-degree">B.E. in Computer Engineering — Specialization in Data Science</p>
+          <p class="edu-meta">Patiala, India · Sept 2020 – Jun 2024 · CPI: 8.50 / 10</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section" id="contact">
+    <div class="container contact-inner">
+      <p class="section-eyebrow">07 — Get in touch</p>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-lead">
+        Open to Data Engineer / Data Analyst opportunities. Have a role or idea in mind? Let's talk.
+      </p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=garg2002nipun@gmail.com" target="_blank" rel="noopener"><i class="fa-solid fa-envelope"></i> garg2002nipun@gmail.com</a>
+        <a class="btn btn-ghost" href="tel:+919988485145"><i class="fa-solid fa-phone"></i> +91 99884-85145</a>
+      </div>
+      <div class="contact-social">
+        <a href="https://linkedin.com/in/ngarg2k2" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/ngarg2k2" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=garg2002nipun@gmail.com" target="_blank" rel="noopener" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Nipun Garg · Built with care.</p>
+    </div>
+  </footer>
+
   <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(a =>
+      a.addEventListener('click', () => navLinks.classList.remove('open')));
 
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", function () {
-        navigator.serviceWorker
-          .register("/sw.js")
-          .then(res => console.log("service worker registered"))
-          .catch(err => console.log("service worker not registered", err))
-      })
+    // Navbar shadow on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () =>
+      navbar.classList.toggle('scrolled', window.scrollY > 20));
+
+    // Typing effect
+    const roles = ['Data Engineer', 'Data Analyst', 'Business Analyst', 'BI Developer'];
+    const typedEl = document.getElementById('typed');
+    let ri = 0, ci = 0, deleting = false;
+    function type() {
+      const word = roles[ri];
+      typedEl.textContent = word.substring(0, ci);
+      if (!deleting && ci < word.length) { ci++; }
+      else if (deleting && ci > 0) { ci--; }
+      else if (!deleting && ci === word.length) { deleting = true; setTimeout(type, 1400); return; }
+      else { deleting = false; ri = (ri + 1) % roles.length; }
+      setTimeout(type, deleting ? 55 : 110);
     }
+    type();
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.section, .tl-item, .project-card, .skill-card, .cert-card').forEach(el => {
+      el.classList.add('reveal'); io.observe(el);
+    });
   </script>
 </body>
 
